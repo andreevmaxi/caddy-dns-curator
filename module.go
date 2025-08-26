@@ -5,7 +5,7 @@ import (
 
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	libdns-curator "github.com/andreevmaxi/libdns-curator"
+	libdnscurator "github.com/andreevmaxi/libdns-curator"
 )
 
 // Provider lets Caddy read and manipulate DNS records hosted by this DNS provider.
