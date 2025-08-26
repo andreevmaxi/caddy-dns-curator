@@ -1,6 +1,6 @@
 module github.com/andreevmaxi/caddy-dns-curator
 
-go 1.16
+go 1.23
 
 require (
 	github.com/caddyserver/caddy/v2 v2.4.1
