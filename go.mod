@@ -1,4 +1,4 @@
-module github.com/caddy-dns/template
+module github.com/andreevmaxi/caddy-dns-curator
 
 go 1.16
 

@@ -1,15 +1,15 @@
-package template
+package curator
 
 import (
 	"fmt"
 
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	libdnstemplate "github.com/libdns/template"
+	libdns-curator "github.com/andreevmaxi/libdns-curator"
 )
 
 // Provider lets Caddy read and manipulate DNS records hosted by this DNS provider.
-type Provider struct{ *libdnstemplate.Provider }
+type Provider struct{ *libdns-curator.Provider }
 
 func init() {
 	caddy.RegisterModule(Provider{})
@@ -18,8 +18,8 @@ func init() {
 // CaddyModule returns the Caddy module information.
 func (Provider) CaddyModule() caddy.ModuleInfo {
 	return caddy.ModuleInfo{
-		ID:  "dns.providers.template",
-		New: func() caddy.Module { return &Provider{new(libdnstemplate.Provider)} },
+		ID:  "dns.providers.curator",
+		New: func() caddy.Module { return &Provider{new(libdns-curator.Provider)} },
 	}
 }
 
